@@ -62,7 +62,7 @@ input[type="number"] {
 }
 
 body {
-    background: linear-gradient(to right, #4cfea8, #32b3fe);
+   background-color: #6c6464;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
