@@ -1,38 +1,69 @@
-form{
-    color : white;
-    margin: auto 25px;
-    background-color: gray;
-    border: 3px solid black;
+form {
+    color: white;
+    margin: 20px auto;
+    background-color: #3a3a3a;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
     text-align: center;
     width: 90%;
-    max-width: 500px;
-    padding: 15px auto;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 20px auto;
-    max-width: 350px;
+    font-size: 2rem;
+    color: #fff8f8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-button{
+button {
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 20px;
     text-decoration: none;
-    background-image: linear-gradient(#4cfea8, #7ae9c8);
-    border: 3px solid #32b3fe;
-    padding: 10px 16px;
-    font-size: 23px;
+    background-image: linear-gradient(to right, #4cfea8, #32b3fe);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
     width: 100%;
 }
 
-div{
+button:hover {
+    background-image: linear-gradient(to right, #32b3fe, #4cfea8);
+    transform: scale(1.05);
+}
+
+div {
     color: black;
-    border: 3px solid black;
-    width: 100%;
-    padding: 10px;
-    font-size: 40px;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    width: 90%;
+    padding: 15px;
+    font-size: 1.5rem;
     margin: 20px auto;
-    max-width: 350px;
+    max-width: 400px;
+    background-color: #e8e8e8;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+body {
+    background: linear-gradient(to right, #4cfea8, #32b3fe);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
