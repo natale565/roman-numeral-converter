@@ -25,7 +25,7 @@ numberInput.addEventListener('keydown', (e) =>{
 } );
 
 convertButton.addEventListener('click', () => {
-const number = numberInput.value;
+let number = numberInput.value;
 
 if(!number){
     output.innerText = 'Please enter a valid number';
@@ -36,5 +36,16 @@ if(!number){
 }else if(number > 3999){
 output.innerText = "Please enter a number less than or equal to 3999";
 return;
+} else {
+    let result = '';
+
+    for(const [roman, numbers] of numeral){
+        while (numberInput >= numbers) {
+          result += roman;
+          number -= number;
+        }
+    }
+    
+    output.innerText = result;
 }
 });
